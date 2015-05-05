@@ -17,9 +17,9 @@
 
 $(function() {
   
-    var count=10;
+  var count=10;
     
-    var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+  var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
   function timer()
   {
@@ -34,7 +34,6 @@ $(function() {
     //Do code for showing the number of seconds here
   }
 
-
   $('button').on('click', function(event) {
     event.preventDefault();
   
@@ -45,12 +44,6 @@ $(function() {
     })
     .done(function(data) {
       $('#history').append('<p>'+data);
-    });
-    
-
-
-
+    });  
   });
-
-
 });

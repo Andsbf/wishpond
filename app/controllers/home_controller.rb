@@ -5,9 +5,7 @@ class HomeController < ApplicationController
   end
 
   def create
-  
     @click  =  Click.create(counts: params[:count])
-
     render json: @click.counts
   end
 
