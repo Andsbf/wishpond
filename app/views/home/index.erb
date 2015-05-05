@@ -1,0 +1,14 @@
+<p id='countDown'>10</p>
+
+<form>
+  <button>Record</button>
+</form>
+
+<div id='history'>
+  <% if @clicks%>
+    <% @clicks.each do |click| %>
+      <p> <%= click.counts %></p>
+    <% end %>
+  <% end %>
+
+</div>
